@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="tabArtist" prefHeight="572.0" prefWidth="664.0" style="-fx-background-color: #001525; -fx-border-color: #FFFFFF;" styleClass="background-style" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demobd3fx.ArtistController">
+    <children>
+        <TextField fx:id="txtAlias" layoutX="50.0" layoutY="613.0" prefHeight="25.0" prefWidth="186.0" promptText="Alias" styleClass="text-field" stylesheets="@css/styles.css" />
+        <TextField fx:id="txtReelNom" layoutX="270.0" layoutY="614.0" prefHeight="25.0" prefWidth="186.0" promptText="Réel Nom" styleClass="text-field" stylesheets="@css/styles.css" />
+        <TextField fx:id="txtNationalite" layoutX="473.0" layoutY="613.0" promptText="Nationalité" stylesheets="@css/styles.css" />
+        <TextField fx:id="txtMaisonDeDisque" layoutX="833.0" layoutY="613.0" prefHeight="25.0" prefWidth="148.0" promptText="Maison de Disque" styleClass="text-field" stylesheets="@css/styles.css" />
+        <TextField fx:id="txtDebut" layoutX="675.0" layoutY="614.0" prefHeight="25.0" prefWidth="93.0" promptText="Début" styleClass="text-field" stylesheets="@css/styles.css" />
+        <Button fx:id="btnLoadArtists" layoutX="455.0" layoutY="43.0" mnemonicParsing="false" onAction="#loadArtists" prefHeight="25.0" prefWidth="125.0" stylesheets="@css/styles.css" text="Load Artists">
+            <styleClass>
+                <String fx:value="button-styles" />
+                <String fx:value="button-styles:hover" />
+            </styleClass>
+            <effect>
+                <DropShadow />
+            </effect></Button>
+        <TableView fx:id="tvArtist" editable="true" layoutX="116.0" layoutY="113.0" prefHeight="283.0" prefWidth="732.0" style="-fx-background-color: #011b2f; -fx-border-color: CE6900BC;" stylesheets="@css/styles.css">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <effect>
+                <DropShadow height="56.04" radius="19.2475" width="22.95" />
+            </effect></TableView>
+        <Button fx:id="btnSaveArtist" disable="true" layoutX="351.0" layoutY="628.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="44.0" prefWidth="391.0" stylesheets="@css/styles.css" text="Save Changes" visible="false">
+            <styleClass>
+                <String fx:value="button-styles-save" />
+                <String fx:value="button-styles:hover" />
+            </styleClass>
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect></Button>
+        <Button fx:id="btnInsertArtist" layoutX="941.0" layoutY="158.0" mnemonicParsing="false" onAction="#insertNewArtist" prefHeight="25.0" prefWidth="65.0" stylesheets="@css/styles.css" text="Insert ">
+            <styleClass>
+                <String fx:value="button-styles" />
+                <String fx:value="button-styles:hover" />
+            </styleClass></Button>
+        <Button fx:id="btnDeleteArtist" layoutX="942.0" layoutY="331.0" mnemonicParsing="false" onAction="#deleteArtist" prefHeight="25.0" prefWidth="63.0" stylesheets="@css/styles.css" text="Delete">
+            <styleClass>
+                <String fx:value="button-styles" />
+                <String fx:value="button-styles:hover" />
+            </styleClass></Button>
+        <Text fill="WHITE" layoutX="56.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alias" wrappingWidth="127.13671875" />
+        <Text fill="WHITE" layoutX="273.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Réel Nom" wrappingWidth="165.13671875" />
+        <Text fill="WHITE" layoutX="476.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nationalité" wrappingWidth="152.13671875" />
+        <Text fill="WHITE" layoutX="677.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Début" wrappingWidth="131.13671875" />
+        <Text fill="WHITE" layoutX="840.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maison de Disque" wrappingWidth="111.13671875" />
+      <TableView fx:id="tvProjet" layoutX="116.0" layoutY="440.0" prefHeight="78.0" prefWidth="732.0" stylesheets="@css/styles.css" />
+    </children></AnchorPane>

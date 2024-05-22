@@ -1,0 +1,32 @@
+.button-styles {
+    -fx-background-color: rgba(206, 105, 0, 0.74);
+    -fx-text-fill: white;
+    -fx-font-family: "Hyperion Regular";
+
+}
+
+.button-styles-save {
+    -fx-background-color: rgba(206, 105, 0, 0.74);
+    -fx-text-fill: white;
+    -fx-font-family: "Hyperion Bold";
+
+}
+
+.button-styles:hover {
+    -fx-background-color: #1b2634;
+    -fx-opacity: 50%;
+
+}
+
+.background-style {
+    /*-fx-background-image: url("../images/background-texture.webp");*/
+    -fx-background-color: #000d17;
+}
+
+.text-field {
+    -fx-background-color: rgba(0, 12, 35, 0.44);
+    -fx-text-fill: white;
+}
+
+
+
